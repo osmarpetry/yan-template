@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FullpageInformation.test /> should render the texts 1`] = `
+<main>
+  <h1>
+    Website in works
+  </h1>
+  <p>
+    Come back later!
+  </p>
+</main>
+`

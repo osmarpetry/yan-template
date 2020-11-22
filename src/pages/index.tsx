@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import FullpageInformation from '../components/FullpageInformation'
+
 export default function Home() {
   return (
     <div>
@@ -8,9 +10,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1>Yan Store</h1>
-      </main>
+      <FullpageInformation
+        title="Webside in works"
+        description="Come back later!"
+      />
     </div>
   )
 }
