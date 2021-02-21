@@ -1,10 +1,12 @@
+import { ThemeProvider } from 'styled-components'
 import Head from 'next/head'
 
 import GlobalStyles from 'styles/global'
+import theme from 'styles/theme'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Head>
         <title>Yan</title>
         <link rel="shortcut icon" href="/img/icon-512.png" />
@@ -17,7 +19,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   )
 }
 

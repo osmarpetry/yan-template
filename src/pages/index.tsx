@@ -1,12 +1,18 @@
-import FullpageInformation from 'components/FullpageInformation'
+import Button from 'components/Button'
 
 export default function Home() {
   return (
-    <>
-      <FullpageInformation
-        title="Webside in works"
-        description="Come back later!"
-      />
-    </>
+    <main
+      style={{
+        alignItems: 'center',
+        display: 'flex',
+        height: '100vh',
+        justifyContent: 'center'
+      }}
+    >
+      <Button size="large" onClick={() => alert('Thanks bro!')}>
+        Alert me!
+      </Button>
+    </main>
   )
 }
