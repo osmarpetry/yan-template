@@ -6,11 +6,23 @@ export default {
   title: 'Button',
   component: Button,
   argTypes: {
+    size: {
+      control: {
+        type: 'select',
+        options: ['small', 'medium', 'large']
+      }
+    },
     children: {
       type: 'string'
     },
     icon: {
       type: ''
+    },
+    as: {
+      control: {
+        type: 'select',
+        options: ['a', 'button']
+      }
     }
   }
 } as Meta
