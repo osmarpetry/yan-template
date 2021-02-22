@@ -4,7 +4,7 @@ export type {{pascalCase name}}Props = {
   name: string
 }
 
-const {{pascalCase name}} = ({ name }) => (
+const {{pascalCase name}} = ({ name }: {{pascalCase name}}Props) => (
   <S.Wrapper>
     <h1>{name}</h1>
   </S.Wrapper>
