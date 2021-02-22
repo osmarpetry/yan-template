@@ -1,21 +1,33 @@
-import * as S from './styles'
+import { useState } from 'react'
 
 import Logo from 'components/Logo'
+
+import { Close as CloseIcon } from '@styled-icons/material/Close'
 import { Menu as MenuIcon } from '@styled-icons/material/Menu'
 import { Person as PersonIcon } from '@styled-icons/material/Person'
 
-const Menu = () => (
-  <S.Wrapper>
-    <S.IconWrapper>
-      <MenuIcon aria-label="Open Menu" />
-    </S.IconWrapper>
-    <S.LogoWrapper>
-      <Logo hideOnMobile aria-label="Application logo" />
-    </S.LogoWrapper>
-    <S.IconWrapper>
-      <PersonIcon aria-label="Profile" />
-    </S.IconWrapper>
-  </S.Wrapper>
-)
+import * as S from './styles'
+
+const Menu = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  return (
+    <S.Wrapper>
+      <S.IconWrapper>
+        <MenuIcon aria-label="Open Menu" onClick={() => setIsOpen(!isOpen)} />
+      </S.IconWrapper>
+      <S.LogoWrapper>
+        <Logo hideOnMobile aria-label="Application logo" />
+      </S.LogoWrapper>
+      <S.IconWrapper>
+        <PersonIcon aria-label="Profile" />
+      </S.IconWrapper>
+
+      <S.MenuFull aria-hidden={!isOpen} isOpen={isOpen}>
+        <CloseIcon aria-label="Close menu" onClick={() => setIsOpen(false)} />
+      </S.MenuFull>
+    </S.Wrapper>
+  )
+}
 
 export default Menu
