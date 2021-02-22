@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
-import MenuIcon, { MenuProps } from '.'
+import MenuIcon from '.'
 
 export default {
   title: 'Menu',
@@ -11,8 +11,8 @@ export default {
   }
 } as Meta
 
-export const Default: Story<MenuProps> = (args) => <MenuIcon {...args} />
+export const Default: Story = () => <MenuIcon />
 
-Default.args = {
-  name: '<Menu />'
+Default.parameters = {
+  layout: 'fullscreen'
 }
