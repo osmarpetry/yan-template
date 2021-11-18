@@ -12,7 +12,8 @@
     "plop-generate": "yarn plop --plopfile generators/plopfile.js",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
