@@ -1,5 +1,5 @@
 {
-  "name": "yan-store",
+  "name": "nextjs-typescript-boilerplate",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,6 +11,7 @@
     "generate": "./generators/bash.sh",
     "plop-generate": "yarn plop --plopfile generators/plopfile.js",
     "test": "jest",
+    "test:watch": "jest --watchAll",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prepare": "husky install"
