@@ -21,14 +21,12 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path:
-          '../src/components/{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
+        path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
         templateFile: 'templates/Component.stories.tsx.hbs'
       },
       {
         type: 'add',
-        path:
-          '../src/components/{{pascalCase name}}/__tests__/{{pascalCase name}}.test.tsx',
+        path: '../src/components/{{pascalCase name}}/__tests__/{{pascalCase name}}.test.tsx',
         templateFile: 'templates/__test__/Component.test.tsx.hbs'
       }
     ]

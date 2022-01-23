@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "prettier": "prettier --write \"./**/*.{ts,tsx,js,jsx,json}\"",
     "type-check": "tsc --noEmit",
     "generate": "./generators/bash.sh",
     "plop-generate": "yarn plop --plopfile generators/plopfile.js",
@@ -33,7 +34,7 @@
     "next-pwa": "5.4.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "styled-components": "5.3.3",
+    "styled-components": "^5.3.3",
     "styled-icons": "10.45.0",
     "styled-media-query": "2.1.2"
   },
