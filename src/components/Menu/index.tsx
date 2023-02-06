@@ -1,7 +1,5 @@
 import { useState } from 'react'
 
-import Logo from 'components/Logo'
-
 import { Close as CloseIcon } from '@styled-icons/material/Close'
 import { Menu as MenuIcon } from '@styled-icons/material/Menu'
 import { Person as PersonIcon } from '@styled-icons/material/Person'
@@ -17,7 +15,9 @@ const Menu = () => {
         <MenuIcon aria-label="Open Menu" onClick={() => setIsOpen(!isOpen)} />
       </S.IconWrapper>
       <S.LogoWrapper>
-        <Logo hideOnMobile aria-label="Application logo" />
+        <h1 aria-label="Application logo" style={{ color: '#ffff' }}>
+          Application
+        </h1>
       </S.LogoWrapper>
       <S.IconWrapper>
         <PersonIcon aria-label="Profile" />
