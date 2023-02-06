@@ -16,7 +16,7 @@ export default {
       type: 'string'
     },
     icon: {
-      type: ''
+      type: 'string'
     },
     as: {
       control: {

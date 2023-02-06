@@ -24,7 +24,7 @@ export default {
   },
   colors: {
     primary: '#F231A5',
-    secondary: '#3CD3C1',
+    secondary: '#FF6347',
     mainBg: '#06092B',
     lightBg: '#F2F2F2',
     white: '#FAFAFA',
@@ -33,6 +33,10 @@ export default {
     gray: '#8F8F8F',
     darkGray: '#2E2F42',
     red: '#FF6347'
+  },
+  filter: {
+    saturate: '90%',
+    brightness: '90%'
   },
   spacings: {
     xxsmall: '0.8rem',

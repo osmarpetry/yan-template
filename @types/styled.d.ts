@@ -7,6 +7,7 @@ declare module 'styled-components' {
     grid: Grid
     border: Border
     font: Font
+    filter: Filter
     colors: Colors
     spacings: Spacings
     layers: Layers
@@ -39,6 +40,11 @@ export interface Font {
   normal: number
   bold: number
   sizes: Sizes
+}
+
+export interface Filter {
+  saturate: string
+  brightness: string
 }
 
 export interface Colors {
