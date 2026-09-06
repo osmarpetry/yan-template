@@ -1,3 +1,5 @@
+> Nao executado CI para dependencias por ser um projeto boilerplate para teste nunca usado.
+
 This is a [Next.js](https://nextjs.org/) boilerplate created based in [this boilerplate](https://nextjs.org/docs/api-reference/create-next-app)
 
 This project uses lot of stuff as:
